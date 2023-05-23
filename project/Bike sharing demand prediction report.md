@@ -29,16 +29,16 @@ So we can infer from this that AutoGluon has the hability to preprocess and engi
 After tuning the model hyper-parameters, the models performance dropped to `1.31230` against `1.81618` when we left the hyper-parameters untouched.
 
 
-### If you were given more time with this dataset, where do you think you would spend more time?
+### If given more time with this dataset, where would we spend more time?
 If given more time, I will spend more time on the first model, the baseline one (its hyper-parameters were not tuned, and `datetime` features were not engineered in the data fed to it).
 That choice is based on the fact that clearly, AutoGluon is very good at predicting well on our dataset without our intervention, so we should give it more time to train (for e.g., doubling the training duration and observing the results).
 
-### Create a table with the models you ran, the hyperparameters modified, and the kaggle score.
+### Create a table with the models we ran, the hyperparameters modified, and the kaggle score.
 |model|timelimit (seconds)|presets|others|score|
 |--|--|--|--|--|
 |initial|10x60|best_quality|-|1.81618|
 |add_features|10x60|best_quality|-|0.47450|
-|hpo|12x60|best_quality|nn:activation|dropout_prob; gmb:num_boost_round|num_leaves; scheduler; searcher|1.31230|
+|hpo|12x60|best_quality|nn:activation -- dropout_prob; gmb:num_boost_round -- num_leaves; scheduler; searcher|1.31230|
 
 ### Create a line plot showing the top model score for the three (or more) training runs during the project.
 ![model_train_score.png](img/model_train_score.png)
