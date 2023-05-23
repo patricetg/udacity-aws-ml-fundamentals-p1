@@ -47,7 +47,7 @@ That choice is based on the fact that clearly, AutoGluon is very good at predict
 ![model_test_score.png](img/model_test_score.png)
 
 ## Summary
-Three models were builts:
+Three models were built:
 - model 1:
   - Is the baseline model
   - Trained for 600 seconds, for a presets of best_quality
